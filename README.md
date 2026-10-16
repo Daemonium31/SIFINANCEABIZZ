@@ -238,6 +238,6 @@ Laporan masalah dan *pull request* dipersilakan. Aturan yang menjaga pembukuan t
 Dirilis dengan **lisensi MIT**. Lihat [`LICENSE`](LICENSE). Anda bebas memakai, mengubah, dan mendistribusikan ulang, termasuk untuk keperluan komersial, selama pemberitahuan hak cipta dan lisensi tetap disertakan. Perangkat lunak disediakan **apa adanya, tanpa jaminan**; periksa kembali hasil pembukuan Anda dengan akuntan.
 
 - Proyek asal: [Qorthony/Sistem-Informasi-Keuangan](https://github.com/Qorthony/Sistem-Informasi-Keuangan) oleh Ahmad Qorthony dan kontributor (2020), juga berlisensi MIT.
-- Kerangka: CodeIgniter 4 (MIT), lihat `license.txt`.
+- Kerangka: CodeIgniter 4 (MIT); lisensinya ikut terpasang di `vendor/codeigniter4/framework/LICENSE` setelah `composer install`.
 - Komponen lain (Dompdf LGPL, Chart.js MIT, ikon Lucide ISC, huruf DM Sans & Source Sans 3 OFL, serta komponen paket desktop): lihat [`THIRD-PARTY-NOTICES.md`](THIRD-PARTY-NOTICES.md).
 - Nama dan logo perusahaan yang diisi pemakai adalah milik pemakai masing-masing dan tidak termasuk lisensi ini.

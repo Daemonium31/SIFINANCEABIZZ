@@ -6,7 +6,7 @@ Aplikasi ini memakai dan menyertakan komponen berikut. Masing-masing tetap tundu
 
 | Komponen | Versi | Lisensi | Lokasi |
 |---|---|---|---|
-| CodeIgniter 4 | 4.7.5 | MIT | `vendor/codeigniter4/framework`, `license.txt` |
+| CodeIgniter 4 | 4.7.5 | MIT | `vendor/codeigniter4/framework` (lisensi: `vendor/codeigniter4/framework/LICENSE`) |
 | Dompdf | 3.1 | LGPL-2.1 | `vendor/dompdf/dompdf` |
 | php-font-lib | 1.0 | LGPL-2.1-or-later | `vendor/dompdf/php-font-lib` |
 | php-svg-lib | 1.0 | LGPL-3.0-or-later | `vendor/dompdf/php-svg-lib` |
