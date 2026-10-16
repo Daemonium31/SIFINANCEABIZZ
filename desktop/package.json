@@ -1,0 +1,58 @@
+{
+  "name": "sistem-informasi-keuangan",
+  "productName": "Sistem Informasi Keuangan",
+  "version": "2.0.0",
+  "description": "Sistem Informasi Keuangan: siklus akuntansi, laporan PDF, dan dashboard presentasi. Berjalan offline.",
+  "author": "Daemonium31 dan kontributor",
+  "license": "MIT",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "siapkan": "node scripts/siapkan.mjs",
+    "start": "npm run siapkan && electron .",
+    "dist": "npm run siapkan && electron-builder --win --x64"
+  },
+  "devDependencies": {
+    "electron": "33.2.1",
+    "electron-builder": "25.1.8"
+  },
+  "build": {
+    "appId": "id.sistem-informasi-keuangan.app",
+    "productName": "Sistem Informasi Keuangan",
+    "copyright": "MIT License",
+    "directories": {
+      "output": "dist",
+      "buildResources": "build"
+    },
+    "files": [
+      "main.js",
+      "memuat.html",
+      "build/icon.png",
+      "package.json"
+    ],
+    "extraResources": [
+      { "from": "build/app", "to": "app", "filter": ["**/*"] },
+      { "from": "build/php", "to": "php", "filter": ["**/*"] }
+    ],
+    "asar": true,
+    "win": {
+      "target": [
+        { "target": "nsis", "arch": ["x64"] },
+        { "target": "portable", "arch": ["x64"] }
+      ],
+      "icon": "build/icon.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Sistem Informasi Keuangan",
+      "artifactName": "Sistem-Informasi-Keuangan-Setup-${version}.${ext}"
+    },
+    "portable": {
+      "artifactName": "Sistem-Informasi-Keuangan-Portable-${version}.${ext}"
+    }
+  }
+}
